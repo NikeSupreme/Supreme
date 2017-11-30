@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn"
+        android:id="@+id/btn_translate"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="平移动画"/>
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn"
+        android:id="@+id/btn_rotate"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="旋转动画"/>
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn"
+        android:id="@+id/btn_fade"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="渐变动画"/>
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn"
+        android:id="@+id/btn_scale"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="缩放动画"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn"
+        android:id="@+id/btn_combination"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="组合动画"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn"
+        android:id="@+id/btn_ponit"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="自定义动画"/>
+</LinearLayout>

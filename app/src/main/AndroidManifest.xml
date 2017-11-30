@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hxc.supreme">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CustomViewActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PieChartActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.TweenAnimationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.AnimationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PropertyAnimationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PointAnimationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OkhttpTestActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.FrameActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.RecycleViewActivity"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>

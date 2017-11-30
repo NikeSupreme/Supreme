@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_splash">
+    <Button
+        android:text="skip"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:id="@+id/btn_skip"
+        android:layout_gravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
