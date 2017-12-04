@@ -20,4 +20,5 @@
     <color name="password_hint_text_color">#b6b6b6</color>
     <color name="base_bg_white">#FEFEFE</color>
     <color name="new_flags">#F77E52</color>
+    <color name="bottomSheetNormalBackground">#f9ffffff</color>
 </resources>

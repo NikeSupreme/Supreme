@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.hxc.supreme.activity.AnimationActivity;
 import com.hxc.supreme.activity.FrameActivity;
+import com.hxc.supreme.activity.MusicMainActivity;
 import com.hxc.supreme.activity.RecycleViewActivity;
 import com.hxc.supreme.activity.TweenAnimationActivity;
 import com.hxc.supreme.activity.CustomViewActivity;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button animation;
     private Button btnFrame;
     private Button btnRecycleView;
+    private Button btnMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         animation = (Button) findViewById(R.id.animation);
         btnFrame = (Button) findViewById(R.id.frame);
         btnRecycleView = (Button) findViewById(R.id.recycleView);
+        btnMusic = (Button) findViewById(R.id.btn_music);
     }
 
     private void initListener() {
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         animation.setOnClickListener(this);
         btnFrame.setOnClickListener(this);
         btnRecycleView.setOnClickListener(this);
+        btnMusic.setOnClickListener(this);
     }
 
     private void initData() {
@@ -59,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.recycleView:
                 startActivity(new Intent(this, RecycleViewActivity.class));
+                break;
+            case R.id.btn_music:
+                startActivity(new Intent(this, MusicMainActivity.class));
                 break;
         }
     }

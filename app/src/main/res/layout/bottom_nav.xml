@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/bottomSheetNormalBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-3dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_play_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/default_artist_ban" />
+
+        <LinearLayout
+            android:layout_width="165dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playbar_info"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/playbar_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="start"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/playbar_btn_play" />
+
+        <ImageView
+            android:id="@+id/iv_play_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/playbar_btn_next" />
+
+    </LinearLayout>
+    <!--<com.bilibili.magicasakura.widgets.TintProgressBar-->
+    <!--android:id="@+id/song_progress_normal"-->
+    <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:progress="0"-->
+    <!--app:progressTint="@color/theme_color_primary" />-->
+</LinearLayout>

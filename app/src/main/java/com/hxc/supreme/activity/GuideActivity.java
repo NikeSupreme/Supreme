@@ -57,10 +57,10 @@ public class GuideActivity extends AppCompatActivity {
             }
         });
 
-        guideOne.setBackgroundResource(R.mipmap.guide_1);
-        guideTwo.setBackgroundResource(R.mipmap.guide_2);
-        guideThree.setBackgroundResource(R.mipmap.guide_3);
-        guideFour.setBackgroundResource(R.mipmap.guide_4);
+        guideOne.setBackgroundResource(R.drawable.guide_1);
+        guideTwo.setBackgroundResource(R.drawable.guide_2);
+        guideThree.setBackgroundResource(R.drawable.guide_3);
+        guideFour.setBackgroundResource(R.drawable.guide_4);
 //            skip.setBackgroundResource(R.drawable.guide_ver3_zh_open);
         //其他语言图片待添加
         guideViews.add(guideOne);

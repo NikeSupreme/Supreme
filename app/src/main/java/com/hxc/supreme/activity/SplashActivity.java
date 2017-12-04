@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.hxc.supreme.MainActivity;
 import com.hxc.supreme.R;
+import com.hxc.supreme.tools.Preference;
 
 /**
  * created by huxc  on 2017/11/28.
@@ -48,14 +49,29 @@ public class SplashActivity extends Activity {
     }
 
     private void initData() {
-        runnable = new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(SplashActivity.this, GuideActivity.class));
-                finish();
-            }
-        };
-        handler.postDelayed(runnable, 3000);
+        boolean isFirstLogin = true;
+        isFirstLogin = Preference.getPreferences().getIsFirstLogin();
+        if (isFirstLogin) {
+            runnable = new Runnable() {
+                @Override
+                public void run() {
+                    startActivity(new Intent(SplashActivity.this, GuideActivity.class));
+                    Preference.getPreferences().setIsFirstLogin(false);
+                    finish();
+                }
+            };
+            handler.postDelayed(runnable, 3000);
+        } else {
+            runnable = new Runnable() {
+                @Override
+                public void run() {
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    finish();
+                }
+            };
+            handler.postDelayed(runnable, 3000);
+        }
+
     }
 
     @Override
