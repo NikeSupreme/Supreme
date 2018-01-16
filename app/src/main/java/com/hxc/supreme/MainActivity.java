@@ -10,7 +10,6 @@ import com.hxc.supreme.activity.AnimationActivity;
 import com.hxc.supreme.activity.FrameActivity;
 import com.hxc.supreme.activity.MusicMainActivity;
 import com.hxc.supreme.activity.RecycleViewActivity;
-import com.hxc.supreme.activity.TweenAnimationActivity;
 import com.hxc.supreme.activity.CustomViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_2);
         initView();
         initListener();
         initData();

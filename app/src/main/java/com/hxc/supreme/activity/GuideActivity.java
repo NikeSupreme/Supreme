@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.hxc.supreme.MainActivity;
 import com.hxc.supreme.R;
 import com.hxc.supreme.widget.viewpagerindicator.CirclePageIndicator;
 
@@ -52,7 +51,7 @@ public class GuideActivity extends AppCompatActivity {
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GuideActivity.this, MainActivity.class));
+                startActivity(new Intent(GuideActivity.this,MainActivity.class));
                 finish();
             }
         });

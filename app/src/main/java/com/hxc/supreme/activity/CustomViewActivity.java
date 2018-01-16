@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.hxc.supreme.R;
+import com.hxc.supreme.customView.SinSurfaceView;
 
 /**
  * created by huxc  on 2017/9/28.
@@ -18,6 +19,7 @@ import com.hxc.supreme.R;
 public class CustomViewActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnPieChart;//饼状图
+    private Button btnSurfaceView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
 
     protected void initView() {
         btnPieChart = (Button) findViewById(R.id.btn_pie_chart);
+        btnSurfaceView = (Button) findViewById(R.id.btn_surfaceView);
     }
 
     protected void initListener() {
@@ -42,6 +45,9 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
         switch (view.getId()){
             case R.id.btn_pie_chart:
                 startActivity(new Intent(this,PieChartActivity.class));
+                break;
+            case R.id.btn_surfaceView:
+                startActivity(new Intent(this,SurfaceViewActivity.class));
                 break;
         }
     }

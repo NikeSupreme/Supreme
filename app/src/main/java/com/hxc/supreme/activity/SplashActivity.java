@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
-import com.hxc.supreme.MainActivity;
 import com.hxc.supreme.R;
 import com.hxc.supreme.tools.Preference;
 

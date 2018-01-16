@@ -1,23 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <Button
-        android:layout_margin="20dp"
-        android:background="@drawable/selector_btn"
         android:id="@+id/btn_tween"
-        android:textColor="@color/orange"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="补间动画"/>
-    <Button
         android:layout_margin="20dp"
         android:background="@drawable/selector_btn"
+        android:text="补间动画"
+        android:textColor="@color/orange" />
+
+    <Button
         android:id="@+id/btn_property"
-        android:textColor="@color/orange"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="属性动画"/>
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_btn"
+        android:text="属性动画"
+        android:textColor="@color/orange" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hxc.supreme.customView.WhewView
+            android:id="@+id/wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_broadcast"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="播报"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <com.hxc.supreme.customView.RoundImageView
+            android:id="@+id/my_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:src="@drawable/app_logo"
+            imagecontrol:border_inside_color="#bc0978"
+            imagecontrol:border_outside_color="#ba3456"
+            imagecontrol:border_thickness="1dp" />
+    </RelativeLayout>
 </LinearLayout>
