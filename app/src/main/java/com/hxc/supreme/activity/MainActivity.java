@@ -13,8 +13,8 @@ import android.widget.LinearLayout;
 import com.hxc.supreme.R;
 import com.hxc.supreme.fragment.AddressFragment;
 import com.hxc.supreme.fragment.FrdFragment;
-import com.hxc.supreme.fragment.SettingFragment;
-import com.hxc.supreme.fragment.WeixinFragment;
+import com.hxc.supreme.fragment.MineFragment;
+import com.hxc.supreme.fragment.HomeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,10 +58,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private void initDatas() {
         mFragments = new ArrayList<>();
         //将四个Fragment加入集合中
-        mFragments.add(new WeixinFragment());
+        mFragments.add(new HomeFragment());
         mFragments.add(new FrdFragment());
         mFragments.add(new AddressFragment());
-        mFragments.add(new SettingFragment());
+        mFragments.add(new MineFragment());
 
         //初始化适配器
         mAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {

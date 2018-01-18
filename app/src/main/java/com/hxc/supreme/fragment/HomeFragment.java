@@ -22,7 +22,7 @@ import com.hxc.supreme.activity.RecycleViewActivity;
  * email: hxc242313@qq.com
  */
 
-public class WeixinFragment extends Fragment implements View.OnClickListener{
+public class HomeFragment extends Fragment implements View.OnClickListener{
     private Button btnCustomView;
     private Button animation;
     private Button btnFrame;
@@ -31,7 +31,7 @@ public class WeixinFragment extends Fragment implements View.OnClickListener{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.tab1, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         initView(view);
         initListener();
         initData();
