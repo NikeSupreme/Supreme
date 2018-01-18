@@ -8,11 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.hxc.supreme.R;
-import com.hxc.supreme.customView.SinSurfaceView;
 
 /**
  * created by huxc  on 2017/9/28.
- * func：
+ * func：  自定义view列表
  * email: hxc242313@qq.com
  */
 
@@ -36,6 +35,7 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
 
     protected void initListener() {
         btnPieChart.setOnClickListener(this);
+        btnSurfaceView.setOnClickListener(this);
     }
     protected void initData() {
     }
@@ -43,10 +43,10 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.btn_pie_chart:
+            case R.id.btn_pie_chart://饼状图
                 startActivity(new Intent(this,PieChartActivity.class));
                 break;
-            case R.id.btn_surfaceView:
+            case R.id.btn_surfaceView://sin函数
                 startActivity(new Intent(this,SurfaceViewActivity.class));
                 break;
         }
