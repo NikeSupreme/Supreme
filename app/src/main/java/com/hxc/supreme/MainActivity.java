@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.hxc.supreme.activity.AnimationActivity;
 import com.hxc.supreme.activity.FrameActivity;
-import com.hxc.supreme.activity.MusicMainActivity;
+import com.hxc.supreme.activity.AsyncTaskActivity;
 import com.hxc.supreme.activity.RecycleViewActivity;
 import com.hxc.supreme.activity.CustomViewActivity;
 
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, RecycleViewActivity.class));
                 break;
             case R.id.btn_music:
-                startActivity(new Intent(this, MusicMainActivity.class));
+                startActivity(new Intent(this, AsyncTaskActivity.class));
                 break;
         }
     }

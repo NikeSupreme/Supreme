@@ -54,6 +54,16 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:textAllCaps="false"
-        android:text="music"/>
+        android:text="AsyncTask"/>
+
+    <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_btn"
+        android:id="@+id/btn_handler"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:text="handler"/>
 </LinearLayout>
 

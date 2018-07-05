@@ -13,7 +13,8 @@ import com.hxc.supreme.R;
 import com.hxc.supreme.activity.AnimationActivity;
 import com.hxc.supreme.activity.CustomViewActivity;
 import com.hxc.supreme.activity.FrameActivity;
-import com.hxc.supreme.activity.MusicMainActivity;
+import com.hxc.supreme.activity.HandlerTestActivity;
+import com.hxc.supreme.activity.AsyncTaskActivity;
 import com.hxc.supreme.activity.RecycleViewActivity;
 
 /**
@@ -28,6 +29,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     private Button btnFrame;
     private Button btnRecycleView;
     private Button btnMusic;
+    private Button btnHandler;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         btnFrame = (Button) view.findViewById(R.id.frame);
         btnRecycleView = (Button)view. findViewById(R.id.recycleView);
         btnMusic = (Button)view. findViewById(R.id.btn_music);
+        btnHandler = (Button)view. findViewById(R.id.btn_handler);
     }
 
     private void initListener() {
@@ -52,6 +55,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         btnFrame.setOnClickListener(this);
         btnRecycleView.setOnClickListener(this);
         btnMusic.setOnClickListener(this);
+        btnHandler.setOnClickListener(this);
     }
 
     private void initData() {
@@ -74,9 +78,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
                 startActivity(new Intent(getActivity(), RecycleViewActivity.class));
                 break;
             case R.id.btn_music:
-                startActivity(new Intent(getActivity(), MusicMainActivity.class));
+                startActivity(new Intent(getActivity(), AsyncTaskActivity.class));
+                break;
+            case R.id.btn_handler:
+                startActivity(new Intent(getActivity(), HandlerTestActivity.class));
                 break;
         }
+
     }
+
 }
 

@@ -22,4 +22,26 @@
     <color name="base_bg_white">#FEFEFE</color>
     <color name="new_flags">#F77E52</color>
     <color name="bottomSheetNormalBackground">#f9ffffff</color>
+    <!-- v6色 -->
+    <color name="v6_green">#8dd652</color>
+    <color name="v6_green_dark">#54bf00</color>
+    <color name="v6_bg">#F1F4F8</color>
+    <color name="v6_line">#D9D9D9</color>
+    <color name="v6_line2">#DDDDDD</color>
+    <color name="v6_text_gray_light">#96999e</color>
+    <color name="v6_text_gray">#5c5c5c</color>
+    <color name="v6_text_secondary">#676767</color>
+    <color name="v6_text_gray_dark">#535353</color>
+    <color name="v6_text_dark">#010101</color>
+    <color name="v6_text_green_light">#7bcb4b</color>
+    <color name="v6_text_green">#5dc604</color>
+    <color name="v6_text_red">#f64a4a</color>
+    <color name="v6_text_uei_key">#393C59</color>
+    <color name="v6_popuup_text">#4b4b4b</color>
+    <color name="v6_button_skip">#40909496</color>
+    <color name="v6_config_wifi_tips">#797979</color>
+    <color name="v6_texthintcolor">#999999</color>
+    <color name="v6_editText_hint_color">#8dd652</color>
+    <color name="v6_safedog_tittle">#0388Fa</color>
+
 </resources>
