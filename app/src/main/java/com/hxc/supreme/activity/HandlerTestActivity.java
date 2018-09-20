@@ -55,6 +55,11 @@ public class HandlerTestActivity extends AppCompatActivity {
         downloadThread = new DownloadLolThread();
         downloadThread.start();
 
+
+        String text = "hxc123411222222222222222222222";
+        int length = text.toCharArray().length;
+        String hexStr = Integer.toHexString(length);
+        Log.i("hxc123","data = "+hexStr);
     }
 
     class DownloadLolThread extends Thread {

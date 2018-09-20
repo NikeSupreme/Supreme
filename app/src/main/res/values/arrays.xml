@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="item_list">
+        <item>自定义view</item>
+        <item>动画</item>
+        <item>框架</item>
+        <item>recycleView基础</item>
+        <item>Android异步之AsyncTask</item>
+        <item>Android异步之Handler</item>
+        <item>图片框架glide</item>
+        <item>Android M权限处理</item>
+    </array>
+</resources>

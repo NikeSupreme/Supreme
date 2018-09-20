@@ -3,6 +3,8 @@
     package="com.hxc.supreme">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:name=".MainApplication"
@@ -21,12 +23,8 @@
         </activity>
 
         <activity
-            android:name=".activity.MainActivity"
-            android:launchMode="singleTask" />
+            android:name=".activity.MainActivity" />
 
-        <activity
-            android:name=".MainActivity"
-            android:launchMode="singleTask" />
         <activity
             android:name=".activity.GuideActivity"
             android:launchMode="singleTop"
@@ -81,6 +79,18 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activity.HandlerTestActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.GlideTestActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.RadarViewActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.CheckPermissionActivity"
             android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>

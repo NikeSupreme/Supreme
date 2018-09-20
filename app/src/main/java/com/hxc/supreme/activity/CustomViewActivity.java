@@ -1,8 +1,11 @@
 package com.hxc.supreme.activity;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +22,7 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
 
     private Button btnPieChart;//饼状图
     private Button btnSurfaceView;
+    private Button btnRadarView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +35,13 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
     protected void initView() {
         btnPieChart = (Button) findViewById(R.id.btn_pie_chart);
         btnSurfaceView = (Button) findViewById(R.id.btn_surfaceView);
+        btnRadarView = (Button) findViewById(R.id.btn_radar);
     }
 
     protected void initListener() {
         btnPieChart.setOnClickListener(this);
         btnSurfaceView.setOnClickListener(this);
+        btnRadarView.setOnClickListener(this);
     }
     protected void initData() {
     }
@@ -49,6 +55,10 @@ public class CustomViewActivity extends AppCompatActivity implements View.OnClic
             case R.id.btn_surfaceView://sin函数
                 startActivity(new Intent(this,SurfaceViewActivity.class));
                 break;
+            case R.id.btn_radar:
+                startActivity(new Intent(this,RadarViewActivity.class));
+                break;
         }
     }
+
 }

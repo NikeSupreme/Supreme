@@ -6,28 +6,19 @@
     <Button
         android:layout_margin="20dp"
         android:background="@drawable/selector_btn"
-        android:id="@+id/btn_pie_chart"
+        android:id="@+id/btn_simple_permission"
         android:textColor="@color/orange"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="饼状图"/>
+        android:text="申请单个权限"/>
     <Button
         android:layout_margin="20dp"
         android:background="@drawable/selector_btn"
-        android:id="@+id/btn_surfaceView"
+        android:id="@+id/btn_multi_permission"
         android:textColor="@color/orange"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:textAllCaps="false"
-        android:text="surfaceView"/>
-    <Button
-        android:layout_margin="20dp"
-        android:background="@drawable/selector_btn"
-        android:id="@+id/btn_radar"
-        android:textColor="@color/orange"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textAllCaps="false"
-        android:text="radarView"/>
+        android:text="申请多个权限"/>
 
 </LinearLayout>
