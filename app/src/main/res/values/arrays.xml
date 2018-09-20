@@ -9,5 +9,6 @@
         <item>Android异步之Handler</item>
         <item>图片框架glide</item>
         <item>Android M权限处理</item>
+        <item>Toast集合</item>
     </array>
 </resources>

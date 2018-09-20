@@ -20,6 +20,7 @@ import com.hxc.supreme.activity.FrameActivity;
 import com.hxc.supreme.activity.GlideTestActivity;
 import com.hxc.supreme.activity.HandlerTestActivity;
 import com.hxc.supreme.activity.AsyncTaskActivity;
+import com.hxc.supreme.activity.MultiToastActivity;
 import com.hxc.supreme.activity.RecycleViewActivity;
 
 /**
@@ -83,7 +84,9 @@ public class HomeFragment extends Fragment implements  AdapterView.OnItemClickLi
             case 7:
                 startActivity(new Intent(getActivity(), CheckPermissionActivity.class));
                 break;
-
+            case 8:
+                startActivity(new Intent(getActivity(), MultiToastActivity.class));
+                break;
 
         }
 
