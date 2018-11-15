@@ -2,6 +2,10 @@ package com.hxc.supreme;
 
 import android.app.Application;
 import android.content.res.Configuration;
+import android.util.Log;
+
+import com.hxc.supreme.utils.ToastUtil;
+import com.hxc.supreme.utils.XCrashHandlerUtils;
 
 /**
  * Created by Administrator on 2017/2/10 0010.
@@ -20,6 +24,7 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+        XCrashHandlerUtils.getInstance().init(getApplicationContext());
 
     }
 
@@ -27,6 +32,7 @@ public class MainApplication extends Application {
     @Override
     public void onTerminate() {
         super.onTerminate();
+        Log.i("MainApplication","logout");
     }
 
 

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Supreme</string>
+    <string name="appwidget_text">翟姝可真是个小仙女啊</string>
+    <string name="add_widget">Add widget</string>
 </resources>

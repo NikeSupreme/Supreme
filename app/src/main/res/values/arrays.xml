@@ -10,5 +10,7 @@
         <item>图片框架glide</item>
         <item>Android M权限处理</item>
         <item>Toast集合</item>
+        <item>Java之synchronize解析</item>
+        <item>Android Service</item>
     </array>
 </resources>

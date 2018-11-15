@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,10 @@ import com.hxc.supreme.activity.HandlerTestActivity;
 import com.hxc.supreme.activity.AsyncTaskActivity;
 import com.hxc.supreme.activity.MultiToastActivity;
 import com.hxc.supreme.activity.RecycleViewActivity;
+import com.hxc.supreme.activity.ServiceTestActivity;
+import com.hxc.supreme.activity.SynchronizeTestActivity;
+
+import java.lang.ref.PhantomReference;
 
 /**
  * created by huxc  on 2017/12/12.
@@ -29,19 +34,62 @@ import com.hxc.supreme.activity.RecycleViewActivity;
  * email: hxc242313@qq.com
  */
 
-public class HomeFragment extends Fragment implements  AdapterView.OnItemClickListener {
+public class HomeFragment extends Fragment implements AdapterView.OnItemClickListener {
     private ListView mListview;
 
     private String[] items;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.i("HomeFragment", "onCreate");
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        Log.i("HomeFragment", "onCreateView");
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         initView(view);
         initListener();
         initData();
         return view;
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Log.i("HomeFragment", "onViewCreated");
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Log.i("HomeFragment", "onActivityCreated");
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.i("HomeFragment", "onStart");
+        if (getUserVisibleHint()) {
+            pullData();
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.i("HomeFragment", "onResume");
+        if (getUserVisibleHint()) {
+            pullData();
+        }
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        Log.i("HomeFragment", "isVisibleToUser = " + isVisibleToUser);
     }
 
     private void initView(View view) {
@@ -54,6 +102,10 @@ public class HomeFragment extends Fragment implements  AdapterView.OnItemClickLi
 
     private void initData() {
         items = getResources().getStringArray(R.array.item_list);
+    }
+
+    private void pullData() {
+        Log.i("HomeFragment", "pullData");
     }
 
 
@@ -87,7 +139,12 @@ public class HomeFragment extends Fragment implements  AdapterView.OnItemClickLi
             case 8:
                 startActivity(new Intent(getActivity(), MultiToastActivity.class));
                 break;
-
+            case 9:
+                startActivity(new Intent(getActivity(), SynchronizeTestActivity.class));
+                break;
+            case 10:
+                startActivity(new Intent(getActivity(), ServiceTestActivity.class));
+                break;
         }
 
     }

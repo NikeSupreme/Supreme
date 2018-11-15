@@ -14,7 +14,7 @@
         android:gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="Welcome to kobe"
+        android:text="Welcome to Lakers"
         android:textColor="@color/black"
         android:textSize="14sp" />
 </FrameLayout>
