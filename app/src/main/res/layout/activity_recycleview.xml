@@ -4,34 +4,55 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.hxc.supreme.MainActivity">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal">
+
         <Button
             android:id="@+id/insert_item"
-            android:text="insert"
-            android:background="@color/orange"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:background="@color/orange"
+            android:text="insert" />
+
         <Button
             android:id="@+id/delete_item"
-            android:text="delete"
-            android:background="@color/lightgreen"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:background="@color/lightgreen"
+            android:text="delete" />
     </LinearLayout>
 
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycleView"
+        android:id="@+id/hor_recycleView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="50dp"></android.support.v7.widget.RecyclerView>
 
-    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ver_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:background="@drawable/icon_8"
+            android:id="@+id/btn_all"
+            android:layout_margin="25dp"
+            android:layout_gravity="right|bottom"
+            android:layout_width="60dp"
+            android:layout_height="30dp" />
+    </FrameLayout>
+
+
 </LinearLayout>

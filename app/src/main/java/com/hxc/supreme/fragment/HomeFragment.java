@@ -1,5 +1,6 @@
 package com.hxc.supreme.fragment;
 
+import android.arch.lifecycle.Lifecycle;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.hxc.supreme.R;
+import com.hxc.supreme.activity.ALifeCycleActivity;
 import com.hxc.supreme.activity.AnimationActivity;
 import com.hxc.supreme.activity.CheckPermissionActivity;
 import com.hxc.supreme.activity.CustomViewActivity;
@@ -25,6 +27,7 @@ import com.hxc.supreme.activity.MultiToastActivity;
 import com.hxc.supreme.activity.RecycleViewActivity;
 import com.hxc.supreme.activity.ServiceTestActivity;
 import com.hxc.supreme.activity.SynchronizeTestActivity;
+import com.hxc.supreme.activity.ViewsTestActivity;
 
 import java.lang.ref.PhantomReference;
 
@@ -144,6 +147,12 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemClickLis
                 break;
             case 10:
                 startActivity(new Intent(getActivity(), ServiceTestActivity.class));
+                break;
+            case 11:
+                startActivity(new Intent(getActivity(), ViewsTestActivity.class));
+                break;
+            case 12:
+                startActivity(new Intent(getActivity(), ALifeCycleActivity.class));
                 break;
         }
 

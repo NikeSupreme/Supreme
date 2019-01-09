@@ -46,4 +46,9 @@ public class MainApplication extends Application {
         super.onLowMemory();
         System.gc();
     }
+
+    @Override
+    public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
+    }
 }
